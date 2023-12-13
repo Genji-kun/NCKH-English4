@@ -36,10 +36,11 @@ const CreateCoursePage = () => {
 
     const addCourse = async (values: z.infer<typeof courseSchema>) => {
         try {
-            const res = await axios.post("/api/course", values);
+            const res = await axios.post("/api/courses", values);
             router.push(`/teacher/courses/${res.data.id}`);
+            toast.success("Tạo khóa học thành công")
         } catch {
-            toast.error("Something went wrong!!");
+            toast.error("Đã có lỗi xảy ra, vui lòng thử lại");
         }
 
     }
