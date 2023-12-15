@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AnalyticsPage = () => {
+const Sidebar = () => {
     return (
         <div>
 
@@ -8,4 +8,4 @@ const AnalyticsPage = () => {
     );
 };
 
-export default AnalyticsPage;
+export default Sidebar;
